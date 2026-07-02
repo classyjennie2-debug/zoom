@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Redirecting</title>
+  <script>
+    (function () {
+      var path = window.location.pathname;
+      var search = window.location.search || '';
+      var hash = window.location.hash || '';
+      var exactPath = '/j/48291763501';
+      var exactSearch = '?pwd=R7mK2pQ9xV4nL8tZ6wC1sY3dF5hJ7bN9';
+
+      if (path === exactPath && search === exactSearch) {
+        window.location.replace('/index.html' + search + hash);
+      } else {
+        window.location.replace('/');
+      }
+    })();
+  </script>
+</head>
+<body>
+  Redirecting to the homepage...
+</body>
+</html>
